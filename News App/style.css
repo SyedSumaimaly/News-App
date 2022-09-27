@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    width: 25%;
+}
+
+.card{
+    background-color:#292728;
+    color: white;
+    margin-top: 7%;
+}
+
+body{
+    background-color:#212121 ;
+}
+
+
+h1{
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
