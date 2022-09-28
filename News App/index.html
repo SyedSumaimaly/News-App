@@ -8,17 +8,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
   <title>News App</title>
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body >
+  <!-- <div class="lds-circle" id="loader"><div></div></div> -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="asset/ESS (250 × 150px).png" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,34 +28,52 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categories
+              Categories
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" vlaue="Bussiness">Bussiness</a></li>
-              <li><a class="dropdown-item" href="#" vlaue="Entertainment">Entertainment</a></li>
-              <li><a class="dropdown-item" href="#" vlaue="Health">Health</a></li>
-              <li><a class="dropdown-item" href="#" vlaue="Science">Science</a></li>
-              <li><a class="dropdown-item" href="#" vlaue="Sports">Sports</a></li>
-              <li><a class="dropdown-item" href="#" vlaue="Technology">Technology</a></li>
+              <li><a class="dropdown-item" href="#bus" vlaue="Bussiness">Bussiness</a></li>
+              <li><a class="dropdown-item" href="#entertainment_section" vlaue="Entertainment">Entertainment</a></li>
+              <li><a class="dropdown-item" href="#health_section" vlaue="Health">Health</a></li>
+              <li><a class="dropdown-item" href="#science_section" vlaue="Science">Science</a></li>
+              <li><a class="dropdown-item" href="#sports_section" vlaue="Sports">Sports</a></li>
+              <li><a class="dropdown-item" href="#technology_section" vlaue="Technology">Technology</a></li>
             </ul>
           </li>
-          
+
         </ul>
         <form class="d-flex" role="search">
-          <!-- <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search"> -->
-        <!-- <button class="btn btn-dark" onclick="displayCat()" type="submit">Search</button> -->
+          <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search"> -->
+          <button class="btn btn-dark" onclick="displayCat()" type="submit">Search</button> -->
         </form>
       </div>
     </div>
   </nav>
 
- 
-  <div class="news_section">
+
+
+  <!-- Search -->
+
+  <div class="news_section" id="tech">
     <div class="container">
-      <div class="row" id="news_section">
+      <div class="row" id="search_section">
+        <div id="news_head">
+          <!-- <h1>
+            General News
+          </h1> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search -->
+
+  <!-- General News -->
+  <div class="news_section" id="gen">
+    <div class="container">
+      <div class="row" id="news_section" id="tech">
         <div id="news_head">
           <h1>
             General News
@@ -62,8 +82,110 @@
       </div>
     </div>
   </div>
+
+  <!-- General News -->
+
+  <!-- Bussiness News -->
+
+  <div class="news_section" id="bus">
+    <div class="container">
+      <div class="row" id="bussiness_section">
+        <div id="news_head">
+          <h1>
+            Bussiness News
+          </h1>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Bussiness News -->
+
+  <!-- Entertainment News -->
+
+  <div class="news_section" id="ent">
+    <div class="container">
+      <div class="row" id="entertainment_section">
+        <div id="news_head">
+          <h1>
+            Entertainment News
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entertainment News -->
+
+  <!-- Health News -->
+
+  <div class="news_section" id="heal">
+    <div class="container">
+      <div class="row" id="health_section">
+        <div id="news_head">
+          <h1>
+            Health News
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Health News -->
+
+  <!-- Science News -->
+
+  <div class="news_section" id="sci">
+    <div class="container">
+      <div class="row" id="science_section">
+        <div id="news_head">
+          <h1>
+            Science News
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Science News -->
+
+  <!-- Sports News -->
+
+  <div class="news_section" id="sport">
+    <div class="container">
+      <div class="row" id="sports_section">
+        <div id="news_head">
+          <h1>
+            Sports News
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sports News -->
+
+
+  <!-- Tech News -->
+
+  <div class="news_section" id="tech">
+    <div class="container">
+      <div class="row" id="technology_section">
+        <div id="news_head">
+          <h1>
+            Technology News
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tech News -->
+
+  <!-- footer -->
+
   <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/8ec7ffe63c.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
